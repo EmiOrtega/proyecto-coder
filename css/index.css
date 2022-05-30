@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    }
+/* Comienzo Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 20%;
+    flex-wrap: nowrap;
+    background-color: white;
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+.links{
+    list-style: none;
+}
+.links li{ 
+    display: inline-block;
+    padding: 0px 25px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: black;
+}
+#logo{
+    height: 50px;
+}
+#perfil{
+    height: 40px;
+    padding: 0 0 10px 0;
+}
+#carrito{
+    height: 45px;
+    padding: 0 0 5px 0;
+}
+/* Fin Header */
+/* Comienzo Footer */
+footer{
+    padding: 30px 20%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    }
+.foot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.titulos{
+    color: #EE7674;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+.letras{
+    color: white;
+}
+/* Fin Footer */
+main{
+    min-height: calc(100vh - 80px - 160px);
+}
+/* Fotos Body */
+.fotos{
+    display: grid;
+    grid-template-columns: 585px 585px;
+    grid-template-rows: 380px 380px;
+    row-gap: 5px;
+    justify-content: center;
+    margin-top: 1%;
+}
+.nike{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.adidas{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.puma{
+    grid-column: 2/3;
+    grid-row: 2/3; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#publicidad-1{
+    width: 576px;
+}
+.publicidad-2{
+    width: 572px;
+}
+/* Final Fotos Body */
+/* Destacados */
+h1{
+    color: black;
+    font-weight: 500;
+    font-size: 35px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.zapas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.destacados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0px 6px;
+}
+/* Final Destacados*/
+/*Formulario-Contactos*/
+.formulario{
+    width: 800px;
+    background-color:#EE7674;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+}
+#titulo2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cajas{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+}
+.botones-contacto{
+    width: 80%;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 6px;
+    margin: 10px 10%;
+}
+#opcion{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* Final Formulario-Contactos*/
+/* Calzado*/
+.Panel{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+.panel-2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.subtitulos{
+    font-size: 20px;    
+    font-style: italic;
+}
+/*Comienzo Calzado Indumentaria Accerorios*/
+.posicion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    max-width: 1170px;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.calzado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+/* Fin Calzado*/
+.indumentaria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+}
+/* Fin Indumentaria*/
+.accesorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+}
+/* Fin Accesorios*/
+#nvtitulo{
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.nvzapas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+/* Responsive*/
+@media (max-width: 600px){
+    .fotos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 5px;
+        justify-content: center;
+    }
+    .nike{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .adidas{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .puma{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #publicidad-1{
+        width: 90%;
+    }
+    .publicidad-2{
+        width: 90%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        justify-content: center;
+    }
+    .links li{ 
+        display: inline-block;
+        justify-content: center;
+        padding-left: 90px;
+        color: black;
+    }
+    .calzado{
+        padding: 0 10%;
+        margin: 0px 6px;
+    }
+    .posicion{
+        padding: 0 10%;
+        margin: 0 16px;
+    }
+    .nvzapas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .formulario{
+        width: 300px;
+    }
+
+}
+/* Fin Responsive*/
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whage</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../Img/Icono pagina.png">
+</head>
+<body>
+    <!--Comienzo Header-->
+    <header>
+        <a href="../index.html"><img src="../Img/whage.png" alt="Logo Whage" id="logo"></a>
+        <nav>
+            <ul class="links">
+                <li><a href="./Calzado.html">Calzado</a></li>
+                <li><a href="./Indumentaria.html">Indumentaria</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./novedades.html">Novedades</a></li>
+            </ul>
+        </nav>  
+        <div class="iconos">  
+            <a href="Contacto.html"><img src="../Img/perfil.png" alt="Perfil" id="perfil"></a>
+            <a href=""><img src="../Img/carrito.png" alt="Carrito" id="carrito"></a>
+        </div>
+    </header>
+    <!--Fin Header-->
+    <main>
+        <!--Comienzo formulario-->
+        <h2 id="titulo2">Crear una cuenta</h2>
+        <form action="index.html" method="post" class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input class="cajas" type="text" name="Nombre"><br>
+            <label for="apellido">Apellido:</label>
+            <input class="cajas" type="text" name="Apellido"><br>
+            <label for="email">Email:</label>
+            <input class="cajas" type="email" name="Email"><br> 
+            <label for="contraseña">Contraseña:</label>
+            <input class="cajas" type="password" name="Contraseña"><br>
+            <label for="novedades">Quiero recibir las ultimas novedades y descuentos</label>
+            <input type="checkbox" name="novedades"><br>
+            <input class="botones-contacto" type="submit" name="Enviar">
+            <input class="botones-contacto" type="reset" name="Limpiar">
+            <p id="opcion"><a href="">Ya tengo una cuenta</a></p>
+        </form>
+        <!--Fin Formulario-->
+    </main>
+    <footer>
+        <!--Comienzo Footer-->
+        <div class="foot">
+            <h2 class="titulos">WHAGE</h2>
+            <ul>
+                <li><a class="letras" href="">Guia de talles</a></li>
+                <li><a class="letras" href="">Sucursales</a></li>
+                <li><a class="letras" href="">Como comprar</a></li>
+                <li><a class="letras" href="">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <h2 class="titulos">CONTACTOS</h2>
+            <a href="" class="letras">whage@tienda.com.ar</a>
+        </div>
+        <div class="foot">
+            <h2 class="titulos">NEWSLETTER</h2>
+            <form action="index.html" method="post">
+                <label for=""></label>
+                <input type="email" name="mail">
+                <input type="submit" value="enviar">
+            </form>
+    </footer>
+    <!--Fin Footer-->
+</body>
+</html>
