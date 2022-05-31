@@ -17,6 +17,7 @@ header{
     background-color: white;
     height: 80px;
     border-bottom: 1px solid black;
+    background-image: linear-gradient(to bottom, #ee7674, #f08176, #f18c79, #f2977e, #f3a183);
 }
 .links{
     list-style: none;
@@ -120,9 +121,7 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: center;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
 }
 .destacados{
     display: flex;
@@ -131,6 +130,15 @@ h1{
     padding: 0 20px;
     margin: 0px 6px;
 }
+.animacion{
+    width: 236px;
+    transition-property: width;
+    transition-delay: 1s;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+.animacion:hover{
+    width: 300px;}
 /* Final Destacados*/
 /*Formulario-Contactos*/
 .formulario{
