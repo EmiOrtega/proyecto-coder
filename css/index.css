@@ -301,6 +301,15 @@ h1{
     .formulario{
         width: 300px;
     }
+    #nike{
+        max-width: 320px;
+    }
+    #adidas{
+        max-width: 320px;
+    }
+    #puma{
+        max-width: 320px;
+    }
 
 }
 /* Fin Responsive*/
