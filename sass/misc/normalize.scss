@@ -7,6 +7,8 @@
     font-size: 16px;
     text-decoration: none;
     }
-$colorbg:black;
-$colormain:#EE7674;
-$colorw:white;
+$colors: (
+primary:black,
+main:#EE7674,
+secondary:white,
+)

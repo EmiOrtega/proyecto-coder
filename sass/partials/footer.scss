@@ -1,6 +1,6 @@
 footer{
     padding: 30px 20%;
-    background-color:$colorbg;
+    background-color:map-get($colors, primary);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,11 +13,11 @@ footer{
     flex-wrap: wrap;
 }
 .titulos{
-    color:$colormain;
+    color:map-get($colors, main);
     font-weight: 500;
     font-size: 20px;
     text-decoration: none;
 }
 .letras{
-    color: $colorw;
+    color:map-get($colors, secondary);
 }

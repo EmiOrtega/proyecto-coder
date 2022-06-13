@@ -5,9 +5,9 @@ header{
     align-items: center;
     padding: 1% 20%;
     flex-wrap: nowrap;
-    background-color: $colorw;
+    background-color: map-get($colors, secondary);
     height: 80px;
-    border-bottom: 1px solid $colorbg;
+    border-bottom: 1px solid map-get($colors, primary);
 }
 .links{
     list-style: none;
@@ -17,7 +17,7 @@ header{
         padding: 0px 40px;
         justify-content: center;
         flex-wrap: nowrap;
-        color: $colorbg;
+        color: map-get($colors, primary); 
     }
 }
 #logo{
