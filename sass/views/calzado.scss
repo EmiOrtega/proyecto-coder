@@ -1,0 +1,36 @@
+.posicion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    max-width: 1300px;
+    margin-left: 25%;
+    margin-top: 5%;
+    .clz-anim{
+        width: 300px;
+        transition: {
+            property: width;
+            delay: 1s;
+            duration: .5s;
+            timing-function: ease-in;
+        }
+        &:hover{
+        width: 360px;}
+    }
+    .calzado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 600px){
+    .calzado{
+        padding: 0 5%;
+        margin: 0px 6px;
+    }
+    .posicion{
+        padding: 0 5%;
+        margin: 0 16px;
+    }
+}

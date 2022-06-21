@@ -32,3 +32,25 @@ header{
         }
     }
 }
+@media (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        justify-content: center;
+    }
+    .links li{ 
+        display: inline-block;
+        justify-content: center;
+        padding-left: 90px;
+        color: black;
+        padding-top: 15px;
+    }
+    .iconos{
+        display: inline-block;
+        justify-content: center;
+        padding-left: 30px;
+        color: black;
+        padding-top: 15px;
+    }
+}

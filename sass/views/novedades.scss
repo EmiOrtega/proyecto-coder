@@ -1,0 +1,26 @@
+
+    #nvtitulo{
+        font: {
+            size: 25px;
+            style: italic;
+        }
+        margin: {
+            left: 20%;
+            top: 5%;
+        }
+    }
+    .nvzapas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 10%;
+    }
+
+    @media (max-width: 600px){
+        .nvzapas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 20px;
+        }
+    }
