@@ -1,20 +1,9 @@
-
-.posicion{
-    display: flex;
-    flex: {
-        direction: row;
-        wrap: wrap;
-    }
-    justify-items: center;
-    max-width: 1300px;
-    margin: {
-        left: 25%;
-        top: 5%;
-    }
+/*Accesorios*/
     .accesorios{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 60px;
+        min-height: 35vh;
     }
-}
+/*Final Accesorios*/

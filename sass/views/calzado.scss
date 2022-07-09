@@ -1,3 +1,5 @@
+
+/*Calzado*/
 .posicion{
     display: flex;
     flex-direction: row;
@@ -22,15 +24,17 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 20px;
+        min-height: 35vh;
     }
+/*Final Calzado*/
 }
-@media (max-width: 600px){
+@media (max-width: 858px){
     .calzado{
-        padding: 0 5%;
+        padding: 0 10%;
         margin: 0px 6px;
     }
     .posicion{
         padding: 0 5%;
-        margin: 0 16px;
+        margin: 0 12px;
     }
 }

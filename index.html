@@ -9,65 +9,30 @@
     <title>Whage</title>
     <link rel="stylesheet" href="css/translated.css">
     <link rel="icon" href="./Img/Icono pagina.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <meta name="viewport" content="initial-scale=1">
-    <!-- CSS only -->
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 </head>
 <body>
     <!-- Comienzo del header -->
-    <header> 
-        <a href="index.html"><img src="./Img/whage.png" alt="Logo Whage" id="logo"></a>
-        <nav>
-            <ul class="links">
-                <li><a href="html/Calzado.html">Calzado</a></li>
-                <li><a href="html/Indumentaria.html">Indumentaria</a></li>
-                <li><a href="html/accesorios.html">Accesorios</a></li>
-                <li><a href="html/novedades.html">Novedades</a></li>
+    <header>
+        <nav class="bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="index.html"><img src="./Img/whage.png" alt="Logo Whage" id="logo"></a>
+            <ul class="barra">
+                <li class="item"><a href="html/Calzado.html" class="lo">Calzado</a></li>
+                <li class="item"><a href="html/Indumentaria.html" class="lo">Indumentaria</a></li>
+                <li class="item"><a href="html/accesorios.html" class="lo">Accesorios</a></li>
+                <li class="item"><a href="html/novedades.html" class="lo">Novedades</a></li>
+                <li class="item"><a href="html/Contacto.html" class="lo"><img src="../Img/perfil.png" alt="Perfil" id="perfil"></a></li>
+                <li class="item"><a href="" class="lo"><img src="../Img/carrito.png" alt="Carrito" id="carrito"></a></li>
             </ul>
         </nav>
-        <div class="iconos">  
-            <a href="html/Contacto.html"><img src="./Img/perfil.png" alt="Perfil" id="perfil"></a>
-            <a href=""><img src="./Img/carrito.png" alt="Carrito" id="carrito"></a>
-        </div>
     </header>
-    <!--<header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./Img/whage.png" alt="Logo Whage" id="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="html/Calzado.html">Calzado</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="html/Indumentaria.html">Indumentaria</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="html/accesorios.html">Accesorios</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="html/novedades.html">Novedades</a></li>
-                    </ul>
-                    <div class="d-flex" role="search">
-                        <a class="navbar-brand" href="html/Contacto.html"><img src="./Img/perfil.png" alt="Perfil" id="perfil"></a>
-                        <a class="navbar-brand" href=""><img src="./Img/carrito.png" alt="Carrito" id="carrito"></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>-->
     <!-- Final del header -->
-    
     <main>
-        <!--
-        <div class="container">
-            <div class="row m-1">
-                <div class="col-12 col-lg-6 mb-2">
-                    <a href="./html/Calzado.html"><img src="./Img/nike.jpg" id="nike" alt="nike"></a>
-                </div>
-                <div class="col-12 col-lg-6 mb-2">
-                    <a href="./html/Calzado.html"><img class="mb-2" src="./Img/adidas2.png" id="adidas" alt="adidas"></a>
-                    <a href="./html/Calzado.html"><img src="./Img/puma2.png" id="puma" alt="puma"></a>
-                </div>
-            </div>
-        </div>
-        -->
         <picture class="fotos">
                 <a href="./html/Calzado.html" class="nike"><img src="./Img/nike.jpg" id="publicidad-1" alt="nike"></a>
                 <a href="./html/Calzado.html" class="adidas"><img src="./Img/adidas2.png" class="publicidad-2" alt="adidas"></a>
@@ -101,35 +66,6 @@
             <P>$36.999</P>
         </div>
         </div>
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-3">
-                    <img src="./Img/jordan-1.jpeg" class="animacion">
-                    <h5>Nike Air Jordan 1</h5> 
-                    <h5>Retro High OG</h5>   
-                    <P>$42.999</P>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <img src="./Img/adidas-ozelia.jpeg" class="animacion">
-                    <h5>Adidas Ozelia</h5>   
-                    <P>$23.999</P>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <img src="./Img/nike-waffle-one.jpeg" class="animacion">
-                    <h5>Nike Waffle One</h5>
-                    <h5>Crater</h3>    
-                    <P>$29.999</P>
-                </div>
-                <div class="col-12 col-lg-3">
-                    <img src="./Img/nike-mowabb.jpeg" class="animacion">
-                    <h5>Nike ACG Air</h5>   
-                    <h5>Mowabb</h5> 
-                    <P>$36.999</P>
-                </div>
-            </div>
-        </div>
-        -->
     </main>
     <!-- Comienzo del footer -->
     <footer>
@@ -156,7 +92,5 @@
         </div>
     </footer>
     <!-- Final del footer -->
-    <!-- JavaScript Bundle with Popper -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

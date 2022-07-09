@@ -6,46 +6,53 @@
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+    list-style: none;
     }
 /* Comienzo Header */
-.container-fluid{
-    max-width: 1154px;
-    height: 80px;
-}
-.navbar.navbar-expand-lg{
-    border-bottom: 1px solid black;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 20%;
-    flex-wrap: nowrap;
-    background-color: white;
-    height: 80px;
-    border-bottom: 1px solid black;
-}
-.links{
-    list-style: none;
-}
-.links li{ 
-    display: inline-block;
-    padding: 0px 40px;
-    justify-content: center;
-    flex-wrap: nowrap;
-    color: black;
-}
 #logo{
     height: 50px;
+    margin-left: 20%;
+    margin-top: 13px;
 }
 #perfil{
-    height: 40px;
-    padding: 0 0 10px 0;
+    height: 35px;
+    padding: 9px 0 0 0;
 }
 #carrito{
-    height: 45px;
-    padding: 0 0 5px 0;
+    height: 40px;
+    padding: 7px 0 0 0;
+}
+.bar{
+    background: white;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.barra{
+    float: right;
+    margin-right: 20%;
+}
+.item{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 26px;
+}
+.lo{
+    color: black;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #EE7674;;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 /* Fin Header */
 /* Comienzo Footer */
@@ -150,21 +157,21 @@ h1{
     width: 300px;}
 /* Final Destacados*/
 /*Formulario-Contactos*/
-/*.formulario{
+.formulario{
     width: 800px;
     background-color:#EE7674;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     color: white;
-}*/
+}
 #titulo2{
     font-size: 35px;
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-/*
+
 .cajas{
     width: 100%;
     padding: 10px;
@@ -184,7 +191,7 @@ h1{
     color: white;
     display: flex;
     justify-content: center;
-}*/
+}
 /* Final Formulario-Contactos*/
 /* Calzado*/
 .Panel{
@@ -251,6 +258,7 @@ h1{
     padding: 0 60px;
 }
 /* Fin Accesorios*/
+/* Novedades*/
 #nvtitulo{
     font-size: 25px;
     font-style: italic;
@@ -263,8 +271,12 @@ h1{
     justify-content: space-around;
     margin-left: 10%;
 }
+.Info{
+    margin-top: 8%;
+}
+/* Fin Novedades*/
 /* Responsive*/
-@media (max-width: 600px){
+@media (max-width: 858px){
     .fotos{
         display: grid;
         grid-template-columns: auto;
@@ -290,26 +302,29 @@ h1{
     .publicidad-2{
         width: 90%;
     }
-    
-    header{
-        display: flex;
-        flex-direction: column;
-        height: 10%;
-        justify-content: center;
+    .checkbtn{
+        display: block;
     }
-    .links li{ 
-        display: inline-block;
-        justify-content: center;
-        padding-left: 90px;
-        color: black;
-        padding-top: 15px;
+    .barra{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: white;
     }
-    .iconos{
-        display: inline-block;
-        justify-content: center;
-        padding-left: 30px;
-        color: black;
-        padding-top: 15px;
+    .item{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .lo{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
     .calzado{
         padding: 0 5%;
@@ -337,7 +352,6 @@ h1{
     #puma{
         max-width: 320px;
     }
-
 }
 /* Fin Responsive*/
 

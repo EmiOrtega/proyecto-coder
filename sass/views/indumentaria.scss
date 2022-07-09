@@ -1,17 +1,10 @@
-
-.posicion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: center;
-    max-width: 1300px;
-    margin-left: 25%;
-    margin-top: 5%;
+/*Indumentaria*/
     .indumentaria{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 60px;
+        min-height: 35vh;
     }
     .ind-anim{
         width: 230px;
@@ -24,10 +17,4 @@
     &:hover{
         width: 280px;}
     }
-}
-@media (max-width: 600px){
-    .posicion{
-        padding: 0 5%;
-        margin: 0 16px;
-    }
-}
+/*Final Indumentaria*/

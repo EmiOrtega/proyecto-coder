@@ -9,41 +9,44 @@
     <title>Novedades-Whage</title>
     <link rel="stylesheet" href="../css/translated.css">
     <link rel="icon" href="../Img/Icono pagina.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <!--Comienzo Header-->
     <header>
-        <a href="../index.html"><img src="../Img/whage.png" alt="Logo Whage" id="logo"></a>
-        <nav>
-            <ul class="links">
-                <li><a href="./Calzado.html">Calzado</a></li>
-                <li><a href="./Indumentaria.html">Indumentaria</a></li>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
+        <nav class="bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.html"><img src="../Img/whage.png" alt="Logo Whage" id="logo"></a>
+            <ul class="barra">
+                <li class="item"><a href="../html/Calzado.html" class="lo">Calzado</a></li>
+                <li class="item"><a href="../html/Indumentaria.html" class="lo">Indumentaria</a></li>
+                <li class="item"><a href="../html/accesorios.html" class="lo">Accesorios</a></li>
+                <li class="item"><a href="../html/novedades.html" class="lo">Novedades</a></li>
+                <li class="item"><a href="../html/Contacto.html" class="lo"><img src="../Img/perfil.png" alt="Perfil" id="perfil"></a></li>
+                <li class="item"><a href="" class="lo"><img src="../Img/carrito.png" alt="Carrito" id="carrito"></a></li>
             </ul>
-        </nav>  
-        <div class="iconos">  
-            <a href="Contacto.html"><img src="../Img/perfil.png" alt="Perfil" id="perfil"></a>
-            <a href=""><img src="../Img/carrito.png" alt="Carrito" id="carrito"></a>
-        </div>
+        </nav>
     </header>
     <!--Fin Header-->
     <main>
         <h2 id="nvtitulo">Proximos Lanzamientos</h2>
         <div class="nvzapas">
             <img src="../Img/novedades-1.png">
-            <h3>Nike Air Max 90 QS</h3>
-            <p>Fecha de lanzamiento: 23/5</p>
+            <h3 class="Info">Nike Air Max 90 QS</h3>
+            <p class="Info">Fecha de lanzamiento: 23/5</p>
         </div>
         <div class="nvzapas">
             <img src="../Img/novedades-2.png">
-            <h3>Nike Blazer Mid 77 Jumbo</h3>
-            <p>Fecha de lanzamiento: 14/6</p>
+            <h3 class="Info">Nike Blazer Mid 77 Jumbo</h3>
+            <p class="Info">Fecha de lanzamiento: 14/6</p>
         </div>
         <div class="nvzapas">
             <img src="../Img/novedades-3.png">
-            <h3>Nike Blazer Low 77 Jumbo</h3>
-            <p>Fecha de lanzamiento: 14/6</p>
+            <h3 class="Info">Nike Blazer Low 77 Jumbo</h3>
+            <p class="Info">Fecha de lanzamiento: 14/6</p>
         </div>
     </main>
     <!--Comienzo Footer-->
